@@ -1,0 +1,4 @@
+# Ignore generated Excel files
+*.xlsx
+*.xls
+__pycache__/
