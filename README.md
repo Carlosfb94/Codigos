@@ -40,6 +40,10 @@ Uso básico:
 python extract_pdf_tables.py cot.872903.junio2025.pdf cot.872913.junio2025.pdf -o cotizaciones.xlsx
 ```
 
+El archivo `cotizaciones.xlsx` se creará en el directorio actual. Dado que las
+extensiones de Excel están ignoradas mediante `.gitignore`, el archivo no se
+sube al repositorio. Compártalo por otros medios si es necesario.
+
 ## Licencia
 
 MIT
