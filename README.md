@@ -1,6 +1,6 @@
 # Convertir archivos a Excel
 
-Este repositorio contiene un script de Python que permite extraer datos de distintos archivos y agruparlos en un libro de Excel.
+Este repositorio contiene varios scripts de Python para transformar archivos en hojas de cálculo.
 
 ## Requisitos
 
@@ -22,6 +22,23 @@ python convert_to_excel.py archivo1.csv archivo2.json -o salida.xlsx
 ```
 
 Cada archivo de entrada se guardará en una hoja diferente del libro `salida.xlsx`.
+
+## Extraer tablas de cotizaciones desde PDF
+
+El script `extract_pdf_tables.py` busca en uno o varios archivos PDF las tablas
+que contengan exactamente los encabezados:
+
+```
+LINEA  CÓDIGO  PRODUCTO  CANTIDAD  PRECIO UNITARIO  TOTAL  VENCIMIENTO  EAN  LABORATORIO
+```
+
+Todas las filas encontradas se combinan en un único archivo Excel.
+
+Uso básico:
+
+```bash
+python extract_pdf_tables.py cot.872903.junio2025.pdf cot.872913.junio2025.pdf -o cotizaciones.xlsx
+```
 
 ## Licencia
 
